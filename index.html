@@ -19,8 +19,7 @@
       position: relative;
       overflow: hidden;
     }
-
-    /* Efek Glitch */
+    
     .glitch {
       position: relative;
       display: inline-block;
@@ -71,7 +70,6 @@
       100% { clip: rect(40px, 900px, 90px, 0); }
     }
 
-    /* Efek darah menetes */
     .drip {
       position: absolute;
       top: -20px;
@@ -98,7 +96,6 @@
       100% { transform: translateY(180px) scaleY(0.7); opacity: 0; }
     }
 
-    /* Splatter darah background */
     .splatter {
       position: absolute;
       width: 200px;
@@ -120,7 +117,6 @@
       transform: rotate(25deg);
     }
 
-    /* Bounty Text */
     .bounty-label {
       font-size: 1.5rem;
       color: #ff0000;
@@ -133,7 +129,6 @@
       color: #fff;
     }
 
-    /* Email Flicker */
     .contact-email {
       margin-top: 1rem;
       font-size: 1rem;
@@ -156,49 +151,43 @@
 </head>
 <body class="flex items-center justify-center min-h-screen relative">
 
-  <!-- Splatter Darah -->
+
   <div class="splatter"></div>
   <div class="splatter2"></div>
 
-  <!-- Poster -->
   <div class="poster max-w-md w-full p-6 text-center rounded-lg relative">
-    <!-- Tetesan darah random -->
     <div class="drip" style="left:30%; animation-delay:0s;"></div>
     <div class="drip" style="left:50%; animation-delay:1s;"></div>
     <div class="drip" style="left:70%; animation-delay:2s;"></div>
 
     <h1 class="glitch text-4xl mb-4 tracking-widest text-red-600" data-text="WANTED">WANTED</h1>
     
-    <!-- Foto Portrait -->
     <div class="mb-4 relative">
       <img src="portrait.webp" alt="Portrait" class="mx-auto w-64 h-80 object-cover border-4 border-red-900 shadow-lg">
     </div>
 
-    <!-- Informasi (rapi grid 2 kolom) -->
     <div class="text-lg text-gray-200 grid grid-cols-2 gap-y-2 text-left max-w-sm mx-auto">
       <p class="font-bold text-red-500">Nama:</p><p>PUTRA LENGKONG</p>
       <p class="font-bold text-red-500">Umur:</p><p>-</p>
       <p class="font-bold text-red-500">Terakhir Diketahui:</p><p>AREA GORONTALO</p>
     </div>
 
-    <!-- Bounty -->
     <div class="mt-6">
       <p class="bounty-label">Bounty:</p>
       <p class="glitch bounty-amount" data-text="Rp 12.000.000">Rp <span id="bounty-amount">12.000.000</span></p>
     </div>
 
-    <!-- Kontak -->
     <div class="contact-email">
       Hubungi: alyciadev@tuta.io (informasi apapun akan sangat berguna)
     </div>
   </div>
 
-  <!-- Backsound Horror -->
   <audio autoplay loop hidden>
     <source src="horror.mp3" type="audio/mpeg">
   </audio>
 
 </body>
 </html>
+
 
 
